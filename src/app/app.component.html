@@ -1,0 +1,318 @@
+<h1>歡迎來到我的網頁</h1>
+<p>這是一段簡單的文字。</p>
+<!-- 第一支程式-字體大小、換行 -->
+
+<h1>HTML練習</h1>
+<textarea name="我是文字輸入框(可拉大)" id="">我是文字輸入框(可拉大)</textarea>
+<ul>
+<li>
+  <label>請輸入文字:</label><input type="text">
+</li>
+<li>
+  <input type="checkbox">
+</li>
+</ul>
+
+<ol>
+<li>
+  <input type="file">
+</li>
+<li>
+  <input type="radio">
+</li>
+</ol>
+<button>我是按鈕button</button>
+<!-- 第二支程式-text checkbox file radio物件 -->
+<!-- UL+LI前面加圓點列示、OL+LI前面加數字列示 -->
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>css練習</title>
+  </head>
+  <body>
+    <p>css練習2</p>
+    <P STYLE='COLOR:RED; font-size: 30px;'>CSS練習</P>
+    <p class="PCSS">css練習2</p>
+  </body>
+</html>
+<!-- 第三支程式-顏色設定&class物件顏色設定 -->
+
+<!-- css box model練習一 -->
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <title>css練習一</title>
+  </head>
+  <body>
+    <p style="padding:200px"><img src="https://img.shoplineapp.com/media/image_clips/663c633b4e4ee000171971aa/original.jpg?1715233595"></p>
+    <p style="padding:300px"><img src="https://im.marieclaire.com.tw/m800c533h100b0/assets/mc/202408/66CC6772258881724671858.jpeg"></p>
+    <p style="padding-left:20px"><input type="text"></p>
+    <p style="padding:120px"><button>button</button></p>
+  </body>
+</html>
+
+<!-- 更正版 -->
+    <img style="width: 200px; height: 200px;"
+      src="https://img.shoplineapp.com/media/image_clips/663c633b4e4ee000171971aa/original.jpg?1715233595">
+    <img style="width: 300px; height: 200px;"
+      src="https://im.marieclaire.com.tw/m800c533h100b0/assets/mc/202408/66CC6772258881724671858.jpeg">
+    <div style="background-color: blue; width:524px; height: 100px;
+        margin-top: 36px; margin-bottom: 36px;"></div>
+    <input style="width: 378px">
+    <button style="width:120px; margin-left: 18px">button</button>
+
+<!-- css boc model練習二 -->
+<!DOCTYPE HTML>
+<HTML>
+  <head>
+    <title><h3>練習二-登入介面</h3></title>
+  </head>
+  <body>
+    <h1><p>登入</p></h1>
+    <p>帳號:<input type="text"></p>
+    <p>密碼:<input type="password"></p>
+    <p class="enter"><button>登入</button></p>
+  </body>
+  <style>
+    .enter{
+      color:red
+    }
+    .bord{
+      color:blue
+    }
+  </style>
+</HTML>
+
+<!-- 更正版 -->
+<div style="width: 300px; height: 300px;background-color: cornsilk; padding: 20px;">
+  <h3 style="text-align: center;">登入</h3>
+  <div style="text-align: center; margin-bottom: 20px;">
+    <label>帳號:</label>
+    <input style="border-radius: 5px;">
+    <br>
+    <label>密碼:</label>
+    <input style="border-radius: 5px;" type="password">
+  </div>
+
+  <div style="text-align: center;">
+    <button style="border-radius: 5px; background-color: blue; color: #fff; width: 80%">登入</button>
+  </div>
+
+<!--筆記區  <br>網頁換行  border-radius邊框圓弧加設定多圓  註解:ctrl+/會變成綠色的字。-->
+<!-- active鼠標點擊 -->
+<!-- cmd中按ctrl+c關閉目前執行檔案，npm i bootstrap安裝https://bootstrap5.hexschool.com/docs/5.1/utilities/flex/-->
+<!-- FLEX排版參考網站:https://bootstrap5.hexschool.com/docs/5.1/utilities/flex/#enable-flex-behaviors -->
+<!-- flex排版練習 -->
+  <div style="color: blue; height: 80px"> Flex item 1</div>
+  <div style="color: green;  margin-top: 40px;"> Flex item 2</div>
+  <div style="color: red; margin-left: 10px; margin-right: 10px;"> Flex item 3</div>
+  <div style="color: darkgreen; margin-bottom: 40px;"> Flex item 4</div>
+  <div style="color: yellow; height: 80px"> Flex item 5</div>
+
+
+  <!-- flex排版練習更正版 -->
+  <div class="d-flex flex-row bd-highlight">
+    <div class="p-2 bd-highlight flexItem1">Flex item 1</div>
+    <div class="flexItem2 align-self-end">Flex item 2</div>
+    <div class="flexItem3 align-self-center">Flex item 3</div>
+    <div class="flexItem4 align-self-start">Flex item 4</div>
+    <div class="p-2 bd-highlight flexItem5">Flex item 5</div>
+  </div>
+  <div class="d-flex flex-row-reverse bd-highlight">
+    <div class="p-2 bd-highlight flexItem1">Flex item 1</div>
+    <div class="flexItem2 align-self-end">Flex item 2</div>
+    <div class="flexItem3 align-self-center">Flex item 3</div>
+    <div class="flexItem4 align-self-start">Flex item 4</div>
+    <div class="p-2 bd-highlight flexItem5">Flex item 5</div>
+  </div>
+
+
+<!-- 背景設定連結
+background-image: url("")
+background-repeat: no repeat
+background-position:
+background-size:contain(圖片變小可完整在網頁呈現)
+.fixed{
+position: fixed;
+top:
+right:
+}定錨，例如:往最上層按鈕，不隨頁面變換位置。
+position: relative、absolute父子層。無法同時設定為父層和子層。
+z-index123越高越前面可設負值。
+開發人員工具+F12、更多工具-->
+
+
+<!-- 前端03練習方法一 -->
+<div style="width: 300px; height: 300px; background-color: #474a4d; position: relative;">
+  <div class="topContent1"></div>
+  <div class="topContent2"></div>
+</div>
+
+<style>
+.topContent1{
+  width: 200px;
+  height: 200px;
+  background-color: #f7b977;
+  position: absolute;
+  right: 0px;
+  z-index: 1;
+}
+
+.topContent2{
+  width: 100px;
+  height: 100px;
+  background-color: #028760;
+  position: absolute;
+  /* transform: translate(50%,50%); */
+  z-index: 2;
+}
+</style>
+
+<!-- 前端03練習-老師方法二更正版:一個父層可以有多個子層。 -->
+<div style="width: 300px; height: 300px; background-color: #474a4d; position: relative;">
+  <div style="width: 200px; height: 200px; background-color: #f7b977; position: absolute; right: 0px;">
+    <div style="width: 100px; height: 100px; background-color: #028760; position: absolute; bottom: 0px;">
+    </div>
+  </div>
+</div>
+
+<!-- 10數據&11變數 練習題 要把變數設定寫在ts中、img src=設定好的變數，更改src的值。-->
+<h1 style=" background-color: red;">{{title}}</h1>
+<h3 style="background-color: lightblue;">{{content}}</h3>
+<img src= "{{imgsrc}}">
+
+<!-- 筆記區
+ 全域變數:頁面關閉後才結束。
+ 盡量放在class的最上面
+ this.全域變數名稱=''
+
+ 區域變數:僅使用在特定頁面中。
+
+ *方法一
+ showtitle(){
+  *宣告變數值(全域&區域都可放在這裡)
+  this.title
+  const title = ''
+  let title = ''
+
+  *彈出視窗
+  alert();
+   }
+
+  *區域變數取名方式:
+  const:只能有一個值、只能宣告一次。
+  let:可被重新賦予值(目前較常使用)-需要先宣告後才可以使用-
+  var:可被重新賦予值(因有缺點較少使用)-不管寫在哪裡都可以套用較不嚴謹-
+
+   全域變數&區域變數可以有相同的名稱title，但建議不要取相同名稱。
+ -->
+
+<!-- 生命週期 網頁一開始就會執行typescript才有此功能
+ <button (ckick)></button>
+ -->
+
+
+ <!-- 類型轉換javascript 文字轉數字
+ let num = 1;
+ let num2 = '2';-這個是字串。
+ let num3 = num * parseInt(num2);
+
+ 打印出文字
+  console.log(num3);
+  console.log(num2);
+  console.log(parseInt(num2));
+白色文字格式、紫色數字格式、nan錯誤>原本就必須要式數字不然無法轉換和相乘。
+
+數字轉文字
+let num = 1
+
+let stringData: string = num + '';
+一、最簡單的方法在後面加上+ '';(此為較不正規的方式)。
+let stringData2: string = string(num);
+二、加上字串變在此變為文字格式(較正規方式)。
+
+F12後可以點開就是JSON格式
+let jsonData = {
+ name: 'Allen',
+ age: 12,
+ props:{
+ name: 'A'
+ }
+}
+console.log(jsonData)
+console.log(JASON.stringify(stringData))-JASON轉換為文字
+
+文字轉換為JSON
+let stringData = '("name": "Allen", "age": 12, "props":{ ("name": "A")}';
+console.log(JSON.parse(stringData));-將字串格式資料轉為JASON格式
+較好抓取JASON格式
+-->
+
+<!-- 指派運算符、比較運算符、邏輯運算符
+ console.log(num == num2)出來會是true或false
+ if ( num != num2){
+ alert(123)}-如果不等於彈出使窗會跳出123
+
+ &&=和AND全部都要符合、||或者OR(shift+\可打出)只符合一個也成立、IF{!()}相反情況才符合
+ 123數字、true或false布林、'"字串、()陣列、{}JSON
+
+ -->
+
+ <!-- DATE日期
+  較常用於資料比較，會和使用者裝置時間不同而顯示不同時間。
+  let today = new Date();-抓取當下的時間
+  date = new Date('2019-10-27');
+  date = new Date('2019-10-27 02:20:02')日期格式、時間格式(時:分:秒)
+  console.log(date);//顯示Date時間格式(非文字格式)
+  console.log(date.date)//每月第幾日=日期
+  console.log(date.day)//星期幾
+  -->
+
+  <!-- 字串常用函數
+  文字位置是從0開始
+  console.log(string.length);//4
+  console.log(string.slice(1,3));//有點聽不太懂
+  console.log(string.index('e'))//從第一個文字開始抓到第一個文字就停止，若無符合須查詢內容會回傳負一-1。
+  -->
+
+  <!-- 數組常用函數//告知裡面有幾組資料
+  建立數組區域變數
+  let arrayData = ('a','b','c','d')
+  console.log(arrayData.length);//4 共有4筆資料。
+  arrayData.splice(1,1);//第一筆資料開始刪除一筆資料
+  -->
+
+  <!--新增字串
+  arrayData2.push('ABC')
+  arrayData2.push('CDF')
+  //刪除最後一筆字串資料
+  -->
+
+  <!--FOR EACH、MAP迴圈
+  FOR EACH//無法中斷或修改內容或額外回傳值。
+  let arrayData3 = ['a','b','c','d']
+  arrayData3. forEach(item, index, array) =>{ array (index) = array(index) + 'd'; }
+  //現在執行資料的值、目前位置-回傳0123、使用哪個陣列去跑
+
+  let newArrayData = arrayData3.map(item) => item = item +'+d';
+ console.log(arrayData3);
+  -->
+
+  <!-- FOR迴圈
+ for( let i = 0; i < 20; i++){
+ console.log(i)//可以檢查迴圈有無設定好
+ }//理應會執行20次值到i>20
+
+ for (let i =0; i < arrayData3.lenth; i++) {
+ console.log(i);
+ arrayData3[i] = arraySata3[i] + 'd'
+ }
+  -->
+
+  <!--
+  無法抓到目前在陣列中的哪個位置
+  console.log(res)
+  -->
+
+
